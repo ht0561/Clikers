@@ -12,6 +12,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     Button sarbach;
+    int sarbach2=0;
 
 
 
@@ -24,8 +25,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void go(View view) {
+        sarbach2++;
 
-        sarbach.setText ("Oh, yea, I’ve been clicked!");
+        sarbach.setText ("this is click number:"+ sarbach2);
 
     }
 }
