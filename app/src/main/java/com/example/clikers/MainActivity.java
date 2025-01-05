@@ -26,8 +26,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void go(View view) {
         sarbach2++;
+        if (sarbach2<6){
+            sarbach.setText ("this is click number:"+ sarbach2);
 
-        sarbach.setText ("this is click number:"+ sarbach2);
+        }
+        else{
+            sarbach.setText("Enough to click. Go to new start!");
+            sarbach2=0;
+        }
+
+
 
     }
 }
